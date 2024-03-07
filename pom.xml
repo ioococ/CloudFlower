@@ -17,7 +17,7 @@
 
     <modules>
         <module>watchdog</module>
-        <module>applecore</module>
+        <module>userservice</module>
     </modules>
 
     <properties>
