@@ -12,12 +12,15 @@
 
     <groupId>ink.onei</groupId>
     <artifactId>CloudFlower</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.1</version>
     <packaging>pom</packaging>
 
     <modules>
         <module>watchdog</module>
-        <module>userservice</module>
+        <module>order-service</module>
+        <module>account-service</module>
+        <module>storage-service</module>
+        <module>root</module>
     </modules>
 
     <properties>
@@ -28,6 +31,7 @@
         <alibaba-nacos.version>2021.0.1.0</alibaba-nacos.version>
         <mysql.version>8.0.28</mysql.version>
         <mybatis.version>2.2.0</mybatis.version>
+        <flower.version>0.0.1</flower.version>
     </properties>
 
     <dependencyManagement>
@@ -58,6 +62,11 @@
                 <version>2021.0.1.0</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>ink.onei</groupId>
+                <artifactId>root</artifactId>
+                <version>${flower.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
